@@ -1,4 +1,6 @@
-package com.iktex.learningjava;
+package com.iktex.app;
+
+import com.iktex.model.Bicycle;
 
 /**
  *
@@ -15,6 +17,7 @@ public class BicycleDemo {
 
         // Invoke methods on 
         // those objects
+        
         bike1.changeCadence(50);
         bike1.speedUp(10);
         bike1.changeGear(2);

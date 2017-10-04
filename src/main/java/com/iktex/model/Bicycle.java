@@ -1,34 +1,34 @@
  
 
-package com.iktex.learningjava;
+package com.iktex.model;
 
 /**
  *
  * @author teyyub Oct 4, 2017 8:44:41 AM
  */
-  class Bicycle {
+  public class Bicycle {
     //fields
     int cadence = 0;
     int speed = 0;
     int gear = 1;
 
-    void changeCadence(int newValue) {
+    public void changeCadence(int newValue) {
          cadence = newValue;
     }
 
-    void changeGear(int newValue) {
+   public void changeGear(int newValue) {
          gear = newValue;
     }
 
-    void speedUp(int increment) {
+    public void speedUp(int increment) {
          speed = speed + increment;   
     }
 
-    void applyBrakes(int decrement) {
+    public void applyBrakes(int decrement) {
          speed = speed - decrement;
     }
 
-    void printStates() {
+    public void printStates() {
          System.out.println("cadence:" +
              cadence + " speed:" + 
              speed + " gear:" + gear);
