@@ -1,6 +1,7 @@
 package com.iktex.app;
 
 import com.iktex.model.Bicycle;
+import com.iktex.model.MountainBicycle;
 
 /**
  *
@@ -14,7 +15,7 @@ public class BicycleDemo {
         // Bicycle objects
         Bicycle bike1 = new Bicycle();
         Bicycle bike2 = new Bicycle();
-
+        MountainBicycle mountainBicycle = new MountainBicycle();
         // Invoke methods on 
         // those objects
         
@@ -30,5 +31,9 @@ public class BicycleDemo {
         bike2.speedUp(10);
         bike2.changeGear(3);
         bike2.printStates();
+        
+        mountainBicycle.changeCadence(5);
+        mountainBicycle.speedUp(2);
+        mountainBicycle.printStates();
     }
 }
