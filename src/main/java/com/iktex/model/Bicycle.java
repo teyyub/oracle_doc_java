@@ -20,39 +20,34 @@ public class Bicycle {
         speed = startSpeed;
     }
 
-//    public void changeCadence(int newValue) {
-//        cadence = newValue;
-//    }
-//
-//    public void changeGear(int newValue) {
-//        gear = newValue;
-//    }
-//
-//    public void speedUp(int increment) {
-//        speed = speed + increment;
-//    }
-//
-//    public void applyBrakes(int decrement) {
-//        speed = speed - decrement;
-//    }
-    
+    public int getCadence() {
+        return cadence;
+    }
+
+    public int getSpeed() {
+        return speed;
+    }
+
+    public int getGear() {
+        return gear;
+    }
+
     public void setCadence(int newValue) {
         cadence = newValue;
     }
-        
+
     public void setGear(int newValue) {
         gear = newValue;
     }
-        
+
     public void applyBrake(int decrement) {
         speed -= decrement;
     }
-        
+
     public void speedUp(int increment) {
         speed += increment;
     }
-    
-    
+
     public void printStates() {
         System.out.println("cadence:"
                 + cadence + " speed:"
