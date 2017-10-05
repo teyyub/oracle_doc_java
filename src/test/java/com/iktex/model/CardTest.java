@@ -14,8 +14,8 @@ import static org.junit.Assert.*;
 public class CardTest {
 
     private Card card;
-
-    //ranks
+    private final static short CARD_SIZE =13;
+   //ranks
     private final String ACE = "Ace";
     private final String JACK = "Jack";
     private final String QUEEEN = "Queen";
