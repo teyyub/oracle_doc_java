@@ -45,8 +45,11 @@ public class DeckTest {
      */
     @Test
     public void testDeck() {
-         deck.dialCard();
-         deck.printDeck();
+        assertEquals(0, deck.count());
+        deck.dialCard();
+        assertEquals(36, deck.count());
+        
+          
     }
   
 }
