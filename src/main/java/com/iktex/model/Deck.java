@@ -53,4 +53,9 @@ public class Deck {
     public int count() {
         return deckOfCard.size();
     }
+
+    public Card getCardByIndex(int index) {
+        return deckOfCard.get(index);
+    }
+
 }

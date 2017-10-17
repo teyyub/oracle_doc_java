@@ -49,7 +49,12 @@ public class DeckTest {
         deck.dialCard();
         assertEquals(36, deck.count());
         
-          
+        assertEquals(deck.getCardByIndex(0).getRank() , Rank.SIX);
+        assertEquals(deck.getCardByIndex(0).getSuit(), Suit.CLUB);  
+        
+        assertEquals(deck.getCardByIndex(35).getRank() , Rank.KING);
+        assertEquals(deck.getCardByIndex(35).getSuit(), Suit.SPADE);  
+        
     }
   
 }
