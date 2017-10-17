@@ -55,7 +55,11 @@ public class Deck {
     }
 
     public Card getCardByIndex(int index) {
-        return deckOfCard.get(index);
+        if (index > 0 && index < CARD_SIZE) {
+            return deckOfCard.get(index);
+        }
+        return null;
+
     }
 
 }

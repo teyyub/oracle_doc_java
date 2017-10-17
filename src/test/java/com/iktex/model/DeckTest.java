@@ -54,7 +54,14 @@ public class DeckTest {
         
         assertEquals(deck.getCardByIndex(35).getRank() , Rank.KING);
         assertEquals(deck.getCardByIndex(35).getSuit(), Suit.SPADE);  
-        
+ 
     }
-  
+    
+    
+    @Test
+    public void testOutOfIndexDeck(){
+        deck.dialCard();
+        assertEquals(deck.getCardByIndex(-1),null); 
+        assertEquals(deck.getCardByIndex(201),null); 
+    }
 }
