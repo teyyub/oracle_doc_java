@@ -8,9 +8,7 @@ public class Card {
 
     private Rank rank;
     private Suit suit;
-//    private String rank;
-//    private String suit;
-//    
+ 
     public Card() {
     }
 
