@@ -40,7 +40,7 @@ public class CardTest {
 
     @Before
     public void setUp() {
-        card = new Card(ACE,CLUB);
+        card = new Card(Rank.ACE, Suit.CLUB);
     }
 
     @After
@@ -51,8 +51,8 @@ public class CardTest {
     public void testSomeMethod() {
         // TODO review the generated test code and remove the default call to fail.
 
-        assertEquals(ACE,card.getRank());
-        assertEquals(CLUB, card.getSuit());
+        assertEquals(Rank.ACE,card.getRank());
+        assertEquals(Suit.CLUB, card.getSuit());
     }
 
 }
