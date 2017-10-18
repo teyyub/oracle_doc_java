@@ -1,5 +1,7 @@
 package com.iktex.model;
 
+import java.util.Objects;
+
 /**
  *
  * @author teyyub Oct 4, 2017 12:41:51 PM
@@ -8,7 +10,7 @@ public class Card {
 
     private Rank rank;
     private Suit suit;
- 
+
     public Card() {
     }
 
@@ -33,6 +35,22 @@ public class Card {
         this.suit = suit;
     }
 
-    
+    @Override
+    public boolean equals(Object obj) {
+        if ((obj == null) || (obj.getClass() != this.getClass())) {
+            return false;
+        }
+        if (obj == this) { return true; }
+        return false;
  
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        hash = 29 * hash + Objects.hashCode(this.rank);
+        hash = 29 * hash + Objects.hashCode(this.suit);
+        return hash;
+    }
+
 }

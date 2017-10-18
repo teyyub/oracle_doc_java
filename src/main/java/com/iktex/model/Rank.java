@@ -6,5 +6,6 @@ package com.iktex.model;
  */
 public enum Rank {
 
-     SIX, SEVEN, EIGHT, NINE, TEN, ACE, JACK, QUEEEN, KING;
+    SIX, SEVEN7, EIGHT, NINE, TEN, JACK, QUEEEN, KING, ACE;
+
 }
