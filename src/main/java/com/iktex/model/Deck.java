@@ -50,7 +50,7 @@ public class Deck {
 //            player.put(i, getCardByIndex(i));
 //            deckOfCard.remove(i);
 //        }
-        short counter = 0;
+        Integer counter = 0;
 //        for (Integer index : deckOfCard.keySet()) {
 ////            System.out.println("key " + index);
 //            if (counter < 6) {
@@ -66,11 +66,19 @@ public class Deck {
             if (counter < 6) {
                 System.out.println(m.getKey());
                 player.put(m.getKey(), m.getValue());
-                deckOfCard.remove(counter);
+//                deckOfCard.remove(counter);
                 counter++;
             }
         }
 
+    }
+
+    public void addCard(Map player, int index, Card card) {
+        player.put(index, card);
+    }
+
+    public void remoreCardFromDeck(int index) {
+        deckOfCard.remove(index);
     }
 
     public void printDeck() {
